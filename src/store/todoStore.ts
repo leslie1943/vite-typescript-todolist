@@ -1,3 +1,9 @@
+/**
+ * 此文件定义了 枚举状态, 代办数据interface, 代办事项对象, 操作代办事项的方法
+ * 
+ * 将 View 和 Model 层的操作彻底隔离开来
+ */
+
 import { reactive } from 'vue'
 
 // 定义枚举 todo item 的状态

@@ -1,15 +1,15 @@
 import { defineComponent } from 'vue'
 import { RouterView, useRoute } from 'vue-router'
 import { todoState, TodoStatus } from './store/todoStore'
-import { __HREF__, RN } from './router'
+import { __HREF__ } from './router'
+import { RN } from './enum'
 
 export default defineComponent(() => {
-  const r = useRoute()
+  const r = useRoute() // this.$route
   return () => (
     <div class="container-sm p-4">
       <div class="Box">
         <div class="Box-body">
-
           <nav class="container-lg UnderlineNav-container" aria-label="Foo bar">
             <div class="container-lg UnderlineNav-container">
               <div class="UnderlineNav-body">

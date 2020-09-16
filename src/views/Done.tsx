@@ -7,7 +7,7 @@ export default defineComponent(() => {
     <>
       {todoState.todos.filter(it => it.status === TodoStatus.FINISHED).map(it => (
         <TodoItem
-          test="test string"
+          test="test"
           key={it.id}
           name={it.name}
           btnText='Delete'

@@ -1,9 +1,6 @@
 import { createRouter, createWebHashHistory, RouteLocationRaw } from 'vue-router'
 
-export const enum RN {
-  TODO = 'todo',
-  DONE = 'done'
-}
+import { RN } from './enum'
 
 export const history = createWebHashHistory()
 export const router = createRouter({
