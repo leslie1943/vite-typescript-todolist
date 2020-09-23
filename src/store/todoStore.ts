@@ -5,7 +5,6 @@
  */
 
 import { reactive } from 'vue'
-
 // 定义枚举 todo item 的状态
 export const enum TodoStatus {
   TODO,
@@ -21,7 +20,8 @@ interface Todo {
 
 // 包含代办项集合的对象
 export const todoState = reactive({
-  todos: new Array<Todo>()
+  todos: new Array<Todo>(),
+  detail: { brand: '青岛啤酒', spec: '双狮', origin: 1, star: 100 }
 })
 
 // 创建
@@ -35,7 +35,10 @@ export const create = (name: string) => {
 
 // 修改状态
 export const finish = (id: number) => {
-  todoState.todos.find(item => item.id === id).status = TodoStatus.FINISHED
+  const target = todoState.todos.find(item => item.id === id)
+  if (target) {
+    target.status = TodoStatus.FINISHED
+  }
 }
 
 // 删除
