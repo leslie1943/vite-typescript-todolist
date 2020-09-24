@@ -17,8 +17,8 @@ const ShopItem = defineComponent({
        * 声明和值要区别开,定义的接口是声明,不能作为值用,所以这里就用了这种方式
        */
       type: Object as () => ItemDetail,
-      required: true
-    }
+      required: true,
+    },
   },
   setup(props) {
     console.info(props)
@@ -29,7 +29,7 @@ const ShopItem = defineComponent({
         <div>{props.item.spec}</div>
       </div>
     )
-  }
+  },
 })
 
 export default ShopItem

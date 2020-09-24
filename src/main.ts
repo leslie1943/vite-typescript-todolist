@@ -1,12 +1,10 @@
-import { createApp } from "vue";
-import App from "./App";
-import { router } from "./router";
-import * as ElementUI from "element3";
-import "element3/lib/theme-chalk/index.css";
+import { createApp } from 'vue'
+import App from './App'
+import { router } from './router'
+import './styles/primer.css'
 
-const app = createApp(App);
+const app = createApp(App)
 
-app.use(router);
-app.use(ElementUI);
+app.use(router)
 
-app.mount("#app");
+app.mount('#app')
