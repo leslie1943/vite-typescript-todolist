@@ -1,11 +1,12 @@
 import { defineComponent } from 'vue'
-import { theme, changeTheme, ThemeType } from '../store/themeStore'
+import { theme, changeTheme } from '../store/themeStore'
+import { ThemeType } from '../enum/index'
 
 const ThemeChange = defineComponent({
   props: {},
   setup(props) {
     return () => (
-      <div style={{ margin: '40px' }}>
+      <div style={{ marginBottom: '10px' }}>
         <button
           onClick={changeTheme}
           type="button"

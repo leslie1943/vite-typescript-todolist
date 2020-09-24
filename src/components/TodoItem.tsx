@@ -4,8 +4,8 @@ import { defineComponent } from 'vue'
 interface TodoItemProp {
   test: String
   name: string
-  btnText: string
-  onBtnClick: () => void
+  btnText?: string
+  onBtnClick?: () => void
 }
 
 // TodoItem.props 指向 initProps 则是操作组件内部逻辑的时候使用props来调用传递的参数
@@ -24,14 +24,16 @@ const TodoItem = defineComponent<TodoItemProp>((props) => {
     <div class="Box border-0">
       <div class="Box-row d-flex flex-items-center border-0">
         <span class="flex-auto">{props.name}</span>
-        <button
-          onClick={props.onBtnClick}
-          type="button"
-          class="btn btn-sm"
-          name="button"
-        >
-          {props.btnText}
-        </button>
+        {props.btnText && (
+          <button
+            onClick={props.onBtnClick}
+            type="button"
+            class="btn btn-sm"
+            name="button"
+          >
+            {props.btnText}
+          </button>
+        )}
       </div>
     </div>
   )

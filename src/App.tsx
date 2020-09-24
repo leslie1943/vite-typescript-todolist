@@ -4,11 +4,9 @@ import { todoState, TodoStatus } from './store/todoStore'
 import { theme, themeStyle } from './store/themeStore'
 import { __HREF__ } from './router'
 import { RN } from './enum'
-import BookItem from './components/BookItem'
-import ShopItem from './components/ShopItem'
+// import BookItem from './components/BookItem'
+// import ShopItem from './components/ShopItem'
 import ThemeChange from './components/ThemeChange'
-// import Input from './components/Input'
-// import homeImage from './assets/home.jpg'
 
 export default defineComponent(() => {
   const r = useRoute() // this.$route
@@ -28,11 +26,11 @@ export default defineComponent(() => {
         </div>
       </header>
 
-      <ThemeChange />
       <div
         class="container-sm p-4"
         style={{ backgroundColor: themeStyle.color || '#2e5881' }}
       >
+        <ThemeChange />
         <div class="Box">
           <div class="Box-body">
             <nav
@@ -41,6 +39,14 @@ export default defineComponent(() => {
             >
               <div class="container-lg UnderlineNav-container">
                 <div class="UnderlineNav-body">
+                  <a
+                    class="UnderlineNav-item"
+                    aria-current={r.name === RN.ALL}
+                    href={__HREF__({ name: RN.ALL })}
+                  >
+                    All
+                    <span class="Counter">{todoState.todos.length}</span>
+                  </a>
                   <a
                     class="UnderlineNav-item"
                     aria-current={r.name === RN.TODO}
