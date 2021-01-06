@@ -11,8 +11,8 @@ import ThemeChange from './components/ThemeChange'
 export default defineComponent(() => {
   const r = useRoute() // this.$route
   return () => (
-    <div>
-      <header class="masthead" style={{ backgroundImage: `url(home.jpg)` }}>
+    <div style={{ marginTop: '100px' }}>
+      {/* <header class="masthead" style={{ backgroundImage: `url(home.jpg)` }}>
         <div class="overlay"></div>
         <div class="container">
           <div class="row">
@@ -24,7 +24,7 @@ export default defineComponent(() => {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       <div
         class="container-sm p-4"
