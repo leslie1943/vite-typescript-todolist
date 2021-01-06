@@ -1905,17 +1905,6 @@ dl.form-group>dd .form-control.is-autocheck-errored,
     padding-right: 30px
 }
 
-dl.form-group>dd .form-control.is-autocheck-loading,
-.form-group>.form-group-body .form-control.is-autocheck-loading {
-}
-
-dl.form-group>dd .form-control.is-autocheck-successful,
-.form-group>.form-group-body .form-control.is-autocheck-successful {
-}
-
-dl.form-group>dd .form-control.is-autocheck-errored,
-.form-group>.form-group-body .form-control.is-autocheck-errored {
-}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -1931,18 +1920,6 @@ only screen and (min-resolution: 2dppx) {
     .form-group>.form-group-body .form-control.is-autocheck-successful,
     .form-group>.form-group-body .form-control.is-autocheck-errored {
         background-size: 16px 16px
-    }
-
-    dl.form-group>dd .form-control.is-autocheck-loading,
-    .form-group>.form-group-body .form-control.is-autocheck-loading {
-    }
-
-    dl.form-group>dd .form-control.is-autocheck-successful,
-    .form-group>.form-group-body .form-control.is-autocheck-successful {
-    }
-
-    dl.form-group>dd .form-control.is-autocheck-errored,
-    .form-group>.form-group-body .form-control.is-autocheck-errored {
     }
 }
 
