@@ -10,10 +10,8 @@ const Input = defineComponent({
     const handleChange = (value: string) => {
       props.onChange(value)
     }
-    return () => (
-      <input value={props.value} onInput={() => handleChange} />
-    )
-  }
+    return () => <input value={props.value} onInput={() => handleChange} />
+  },
 })
 
 export default Input
