@@ -1907,17 +1907,17 @@ dl.form-group>dd .form-control.is-autocheck-errored,
 
 dl.form-group>dd .form-control.is-autocheck-loading,
 .form-group>.form-group-body .form-control.is-autocheck-loading {
-    background-image: url("/images/spinners/octocat-spinner-16px.gif")
+    /* background-image: url("/images/spinners/octocat-spinner-16px.gif") */
 }
 
 dl.form-group>dd .form-control.is-autocheck-successful,
 .form-group>.form-group-body .form-control.is-autocheck-successful {
-    background-image: url("/images/modules/ajax/success.png")
+    /* background-image: url("/images/modules/ajax/success.png") */
 }
 
 dl.form-group>dd .form-control.is-autocheck-errored,
 .form-group>.form-group-body .form-control.is-autocheck-errored {
-    background-image: url("/images/modules/ajax/error.png")
+    /* background-image: url("/images/modules/ajax/error.png") */
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
